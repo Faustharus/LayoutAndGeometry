@@ -12,6 +12,7 @@ struct ContentView: View {
         VStack(alignment: .leading) {
             ForEach(0 ..< 10) { position in
                 Text("Position \(position)")
+                    .padding(.horizontal, 10)
                     .alignmentGuide(.leading) { _ in
                         Double(position) * -10
                     }
